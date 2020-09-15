@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Test</title>
+	    <script type="text/css">
+	    .center { margin-left: auto;
+				  margin-right: auto;
+				  display: block; }
+	    </script>
+	</head>
+	<body>
+		<h1>PELICULA</h1>
+		<video class='center' width="400" controls>
+	  		<source src="mulan.mp4" type="video/mp4">
+	  		Your browser does not support HTML video.
+		</video>	
+    <!-- <iframe src="https://drive.google.com/file/d/1Bquc0S5mE7EqvUD62sF14OClBM3K2gQF/preview" width="490" height="480"></iframe> -->
+    <script type="text/javascript">
+      video = document.getElementsByTagName("video")[0];
+
+      for (i=0; i < video.audioTracks.length; i++) {
+        if (video.audioTracks[i].language.substring(0,2) === "spa") {
+          video.audioTracks[i].enabled = true;
+        } else {
+          video.audioTracks[i].enabled = false;
+        }
+      }
+    </script>
+	</body>
+</html>
