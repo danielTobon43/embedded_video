@@ -14,13 +14,9 @@
 	  		<source src="chavo.mp4" type="video/mp4">
 	  		Your browser does not support HTML video.
 		</video> -->
-	<div class="video">
-	<img src="poster.jpg">	
-    <!-- <iframe src="https://drive.google.com/file/d/1Bquc0S5mE7EqvUD62sF14OClBM3K2gQF/preview" width="490" height="480" frameborder="0" allowFullScreen="true"></iframe> -->
     <iframe src="https://drive.google.com/file/d/18MttHqx98l2oFC0A0eqWojGHGpmpCqYN/preview" width="490" height="480" frameborder="0" allowFullScreen="true"></iframe>
-    
-    </div>
-    <script type="text/javascript">
+
+    <!-- <script type="text/javascript">
       video = document.getElementsByTagName("iframe")[0];
 
       for (i=0; i < video.audioTracks.length; i++) {
@@ -30,25 +26,6 @@
           video.audioTracks[i].enabled = false;
         }
       }
-    </script>
-    <script type="text/javascript">
-		$(function() { 
-		    var videos  = $(".video");
-
-		        videos.on("click", function(){
-		            var elm = $(this),
-		                conts   = elm.contents(),
-		                le      = conts.length,
-		                ifr     = null;
-
-		            for(var i = 0; i<le; i++){
-		              if(conts[i].nodeType == 8) ifr = conts[i].textContent;
-		            }
-
-		            elm.addClass("player").html(ifr);
-		            elm.off("click");
-		        });
-		});
-		</script>
+    </script> -->
 	</body>
 </html>
